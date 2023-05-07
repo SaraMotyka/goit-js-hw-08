@@ -5,7 +5,7 @@
   "homepage": "https://saramotyka.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,11 @@
   "author": "Sara Motyka <saramotyka97@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SaraMotyka/goit-js-hw-08/issues"
+    "url": "https://github.com/SaraMotyka/goit-js-hw-08.git"
   },
   "dependencies": {
+    "@vimeo/player": "^2.19.0",
+    "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
     "simplelightbox": "^2.13.0"
   },
