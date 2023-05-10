@@ -7,7 +7,8 @@ const dataForm = {
   message: '',
 };
 const savedData = throttle(e => {
-  dataForm[e.target.name] = e.target.value;
+  dataForm['email'] = form.email.value;
+  dataForm['message'] = form.message.value;
   localStorage.setItem(localStorageKey, JSON.stringify(dataForm));
 }, 500);
 

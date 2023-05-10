@@ -11,10 +11,12 @@ try {
     localStorage.setItem(localStorageKey, data.seconds);
   };
   //3
-  player.setCurrentTime(JSON.parse(localStorage.getItem(localStorageKey)));
+  player.on('loaded', () => {
+    const setTime = localStorage.getItem(localStorageKey) || 0;
+    player.setCurrentTime(setTime);
+  });
   //4
   player.on('timeupdate', throttle(onPlay, 1000));
-  console.log('Everything is fine!');
 } catch (error) {
   console.log('Sorry, try later!');
 }
